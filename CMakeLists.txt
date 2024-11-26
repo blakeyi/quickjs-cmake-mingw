@@ -18,8 +18,8 @@ target_sources(qjs PRIVATE
     "./quickjs/libbf.c"
     "./quickjs/quickjs.c"
     "./quickjs/quickjs-libc.c"
-    "./quickjs/repl.c"
-    "./quickjs/qjscalc.c"
+    # "./quickjs/repl.c"
+    # "./quickjs/qjscalc.c"
 )
 
 # 创建动态库 qjs
@@ -30,8 +30,8 @@ add_library(qjsdll SHARED
     "./quickjs/libbf.c"
     "./quickjs/quickjs.c"
     "./quickjs/quickjs-libc.c"
-    "./quickjs/repl.c"
-    "./quickjs/qjscalc.c"
+    # "./quickjs/repl.c"
+    # "./quickjs/qjscalc.c"
 )
 target_link_libraries(qjsdll pthread)
 target_compile_definitions(qjsdll PRIVATE CONFIG_VERSION="${QUICKJS_VERSION}" CONFIG_BIGNUM)

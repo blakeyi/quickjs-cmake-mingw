@@ -23,9 +23,9 @@ Target: x86_64-w64-mingw32
 
 Thread model: win32
 gcc version 8.5.0 (x86_64-win32-seh-rev0, Built by MinGW-W64 project)
-```
 
 ```
+
 
 3. 编译执行
 注意这里指定使用mingw,不然会默认使用mvsc
